@@ -12,8 +12,8 @@ const Navbar = () => {
         <Link to="/" style={{color:"inherit",textDecoration:"none"}}><span className="logo">booking.com</span></Link>
         
         {user ? user.username :  (<div className="navItems">
-          <button className="navButton">Register</button>
-          <button className="navButton">Login</button>
+          <a href="/register"><button className="navButton">Register</button></a>
+          <a href="/login"><button className="navButton">Login</button></a>
         </div>)}
       </div>
     </div>
